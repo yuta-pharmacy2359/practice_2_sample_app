@@ -33,10 +33,9 @@ class TodolistsController < ApplicationController
     redirect_to todolists_path
   end
 
-
   private
+
   def list_params
     params.require(:list).permit(:title, :body, :image)
   end
-
 end
